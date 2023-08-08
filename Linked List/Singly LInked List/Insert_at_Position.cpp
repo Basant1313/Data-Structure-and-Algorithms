@@ -105,6 +105,7 @@ void insert_at_position(int position,Node* head,Node*tail,int data){
     }
 
     int len=get_length(head);
+    cout<<len<<endl;
 
     if(position>len){
         insert_at_tail(head,tail,data);
@@ -119,6 +120,7 @@ void insert_at_position(int position,Node* head,Node*tail,int data){
     while(i<position-1){
         
         prev=prev->next;
+        
         i++;
     }
     Node* curr =prev->next;
@@ -160,7 +162,7 @@ int main (){
     insert_at_tail(head,tail,50);
     insert_at_tail(head,tail,40);
     insert_at_tail(head,tail,60);
-    insert_at_position(6,head,tail,100);
+    insert_at_position(1,head,tail,100);
 
 
     cout<<"Printing LL elements: "<<endl;
