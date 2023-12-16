@@ -15,6 +15,7 @@ bool check_palindrome(char arr[]){
         else
             i++;
             j--;
+            
 
         
     }

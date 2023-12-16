@@ -121,7 +121,7 @@ void print (Node* head){
     }
 }
 
-
+void deletion (int postion)
 
 int main() {
 
