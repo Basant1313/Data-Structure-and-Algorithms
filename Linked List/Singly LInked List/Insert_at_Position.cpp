@@ -118,6 +118,7 @@ void insert_at_position (int position,Node* &head,Node* &tail,int data){
     }
      //step 1: find back and front
     int len= get_Length(head);
+    cout<<len<<endl;
     if(position>len){
         insert_at_tail(head,tail,data);
     }
