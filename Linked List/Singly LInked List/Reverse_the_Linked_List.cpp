@@ -80,8 +80,8 @@ int main() {
 
     print(head);
     cout<<endl;
-    // head= reverse_Using_Loop(head);
-    head=reverse_recursion(prev,curr);
+    head= reverse_Using_Loop(head);
+    // head=reverse_recursion(prev,curr);
     cout<<endl;
     print(head);
 
