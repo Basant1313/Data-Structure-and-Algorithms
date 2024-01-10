@@ -17,7 +17,7 @@ for(int i=0;i<n;++i){
 
 
         else{
-            cout<<"      ";
+            cout<<" ";
         }
     }
     cout<<endl;

@@ -75,6 +75,8 @@ Node* solve (Node* &head1 , Node* &head2){
 
     while(head1 != NULL && head2 != NULL){
 
+            cout<<  carry <<endl;
+            cout<< head1->data << " + "<< head2->data <<endl;
         int sum = carry + head1->data + head2->data;
 
         // find out digit to create node for
@@ -127,8 +129,11 @@ Node* solve (Node* &head1 , Node* &head2){
     // when second Linked List has more number of node than the first Linked List
 
     while (head2 != NULL){
-        int sum = carry + head2->data;
 
+        int sum = carry + head2->data;
+        cout<<carry<<endl;
+
+        cout<<head2->data <<endl;
         int digit = sum % 10;
 
         carry = sum / 10;
@@ -165,18 +170,22 @@ int main () {
 
     Node* head1 = new Node(2);
     Node* second1 = new Node(4);
+    Node* third1 = new Node(9);
+    
 
     head1->next = second1;
-    // second1->next= NULL;
+    second1->next= third1;
 
 
-    Node* head2 = new Node (2);
-    Node* second2 = new Node (3);
+    Node* head2 = new Node (5);
+    Node* second2 = new Node (6);
     Node* third2 = new Node (4); 
+    Node* fourth2 = new Node (9); 
+    
 
     head2->next =  second2;
     second2->next=third2;
-    // third2->next = NULL;
+    third2->next = fourth2;
 
 
    Node* ans = solve (head1, head2);

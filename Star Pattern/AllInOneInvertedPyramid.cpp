@@ -15,7 +15,7 @@ for(int i=0;i<n;++i){
                            //3.Right Inverted  Half Pyramid
         
         else{
-            cout<<"* ";
+            cout<<" *";
         }
     }
     cout<<endl;
